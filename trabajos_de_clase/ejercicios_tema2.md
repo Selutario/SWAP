@@ -1,3 +1,20 @@
+<h2><b>Ejercicio T2.1</b></h2>
+<h3><b>Calcular la disponibilidad del sistema si tenemos dos réplicas de cada elemento (en total 3 elementos en cada subsistema).</b></h3>
+
+-> 97'75 + (1 - 97'75)*85 = 99'6625<br>
+-> 97'75 + (1 - 99)*90 = 99'9<br>
+-> 97'75 + (1 - 99'99)*99'9 = 99'99999<br>
+-> 97'75 + (1 - 99'96)*98 = 99'9992<br>
+-> 97'75 + (1 - 97'75)*85 = 99'6625<br>
+-> 97'75 + (1 - 99'99)*99 = 99'9999<br>
+-> 97'75 + (1 - 99'99)*99'99 = 99'99<br>
+-> 97'75 + (1 - 99'75)*95 = 99'9875<br>
+
+<b>Disponibilidad total:</b>
+0,996625×0,999×0,999999×0,999992×0,996625×0,999999×0,9999×0,999875 = 99,2034961%
+
+--------------------------------------------------
+
 <h2><b>Ejercicio T2.2</b></h2>
 <h3><b>Buscar frameworks y librerías para diferentes lenguajes que permitan hacer aplicaciones altamente disponibles con relativa facilidad.</b></h3>
 
