@@ -82,7 +82,10 @@ La herramienta más sencilla para realizar el filtrado de paquetes en linux es i
 
 
 <b> En Windows: </b>
+
 En windows se puede utilizar como herramienta de filtrado el propio servicio de firewall que ya viene instalado por defecto.
+
+
 ------------------------
 <h3>Bibliografía:</h3>
 
