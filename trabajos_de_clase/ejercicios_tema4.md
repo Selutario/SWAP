@@ -78,7 +78,7 @@ Es posible que los datos sean incorrectos como ya he comentado, pero si fueran r
 
 Como se puede apreciar a continuación, el resultado final tras instalar la imagen en Debian del balanceador ZenLoadBalancer es muy similar al obtenido en la práctica 3. Esta máquina virtual, si estuviera configurada con unos parámetros correctos y reales de IP, dominio y servidores a los que balancear, realizaría su función perfectamente (al igual que en las prácticas con otros balanceadores como nginx o HAproxy).
 
-![ejert4.4]()
+![ejert4.4](https://raw.githubusercontent.com/Selutario/SWAP/master/trabajos_de_clase/pantallazos/ejert4.4.png)
 
 --------------------------------------------------
 
