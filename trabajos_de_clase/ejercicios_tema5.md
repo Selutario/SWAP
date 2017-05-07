@@ -22,7 +22,7 @@ Como los servidores web que hemos configurado en las prácticas son Ubuntu serve
 
 No obstante, se produce un error que no he llegado a solucionar pero que muestro a continuación:
 
-![wireshark]()
+![wireshark](https://github.com/Selutario/SWAP/blob/master/trabajos_de_clase/pantallazos/ejer5-2.png?raw=true)
 
 --------------------------------------------------
 
