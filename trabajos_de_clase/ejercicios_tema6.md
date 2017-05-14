@@ -5,12 +5,12 @@ Aplicar con iptables una política de permitir todo el tráfico en una de las m�
 
 En primer lugar he aplicado una política en la que se denegaba todo el tráfico de la máquina dos. El resultado ha sido que al llamar al balanceador desde una cuarta máquina, la respuesta de éste era satisfactoria cuando los paquetes los desviaba a la máquina <b>UNO</b> pero se producía un error (<i>503 Service Unavailable</i>) al hacerlo a la máquina <b>DOS</b>, la cual no respondía a estos paquetes (ni siquiera los recibía).
 
-![imagen1]()
+![imagen1](https://github.com/Selutario/SWAP/blob/master/trabajos_de_clase/pantallazos/6-1a.png?raw=true)
 
 
 En cambio, al cambiar la política de modo que se acepte todo el tráfico, volvía a funcionar como lo hacía antes. No obstante, aunque parezca que el funcionamiento es correcto, la seguridad no lo es ya que no se prohíbe la conexión desde ninguno de los puertos abiertos.
 
-![imagen2]()
+![imagen2](https://github.com/Selutario/SWAP/blob/master/trabajos_de_clase/pantallazos/6-1b.png?raw=true)
 
 --------------------------------------------------
 
