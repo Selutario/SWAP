@@ -3,7 +3,7 @@ Tareas realizadas:
 
 <b>1. Instalar un certificado SSL autofirmado para configurar el acceso HTTPS a los servidores.</b><br>
 
-![certificado autofirmado]()
+![certificado autofirmado](https://github.com/Selutario/SWAP/blob/master/pr%C3%A1ctica%204/pantallazos/default_activado_y_https.png?raw=true)
 
 Como se puede ver en la imagen, una vez que hemos rellenado los datos que requiere el programa que crea un certificado autofirmado, indicamos dentro del archivo de configuración de Apache /etc/apache2/sites-available/default-ssl la ruta de los certificados.
 
@@ -11,7 +11,7 @@ Tras ello, al realizar una llamada desde la Máquina 2 a la ruta de la máquina 
 
 En la siguiente imagen se pueden apreciar ambas máquinas respondiendo a llamadas desde el puerto 443:
 
-![ssl en M1 y M2]()
+![ssl en M1 y M2](https://github.com/Selutario/SWAP/blob/master/pr%C3%A1ctica%204/pantallazos/http-https-1_2.png?raw=true)
 
 --------------------------------------------
 <b>2. Configurar las reglas del cortafuegos con IPTABLES para asegurar el acceso a los servidores web, permitiendo el acceso por los puertos de HTTP y HTTPS. Esta configuración se puede hacer en la misma máquina balanceadora. En cualquier caso se debe poner en un script que se ejecute en el arranque del sistema.</b><br>
@@ -20,7 +20,7 @@ En mi caso he optado por configurar las reglas de manera individual en cada máq
 
 He seguido la configuración aconsejada en el guión de prácticas para un servidor web, creando el siguiente script (idéntico en la máquina 1 y la máquina 2):
 
-![Script iptables]()
+![Script iptables](https://github.com/Selutario/SWAP/blob/master/pr%C3%A1ctica%204/pantallazos/iptables.png?raw=true)
 
 Por último, para que estas reglas se guarden de manera permanente, manteniéndose tras cada reinicio, he guardado las reglas actuales con iptables-save y he escrito una línea dentro del archivo de redes /etc/network/interfaces que permita cargar esa configuración cada vez que ese archivo es cargado:
 
@@ -44,7 +44,7 @@ Por ello, a pesar de haberlo configurado todo y tener los certificados de Let's 
 
 No obstante, dejo aquí una imagen que muestra como era el proceso de creación de un certificado Certbot/Let's Encrypt mediante SSH (se muestra cortada para no mostrar al completo la clave generada):
 
-![SSL Raspberry pi]()
+![SSL Raspberry pi](https://github.com/Selutario/SWAP/blob/master/pr%C3%A1ctica%204/pantallazos/ssl_rpi.png?raw=true)
 
 --------------------------------------------
 
@@ -54,9 +54,9 @@ Siguiendo el PDF que Pedro creó sobre como realizar esta parte opcional, he cre
 
 En esta primera imagen vemos el script resultante:
 
-![Script filtrado]()
+![Script filtrado](https://github.com/Selutario/SWAP/blob/master/pr%C3%A1ctica%204/pantallazos/opcional1.png?raw=true)
 
 
 Y en esta otra, vemos el comportamiento al llamar a la máquina filtradora (firewall) antes y después de aplicar el script:
 
-![Script filtrado 2]()
+![Script filtrado 2](https://github.com/Selutario/SWAP/blob/master/pr%C3%A1ctica%204/pantallazos/opcional2.png?raw=true)
